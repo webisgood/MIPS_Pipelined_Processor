@@ -1,0 +1,15 @@
+ISim log file
+Running: C:\Users\Sanjeev\Desktop\Practice files\Acad Labs\Comp Arch Lab\Pipelined_MIPS_Assignment_3\Assignment_3\R_Type_Datapath (4)\R_Type_Datapath\Pipeline_test_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Sanjeev/Desktop/Practice files/Acad Labs/Comp Arch Lab/Pipelined_MIPS_Assignment_3/Assignment_3/R_Type_Datapath (4)/R_Type_Datapath/Pipeline_test_isim_beh.wdb 
+ISim P.15xf (signature 0xc3576ebc)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+WARNING: File "C:/Users/Sanjeev/Desktop/Practice files/Acad Labs/Comp Arch Lab/Pipelined_MIPS_Assignment_3/Assignment_3/R_Type_Datapath (4)/R_Type_Datapath/SCDataPath.v" Line 92.  For instance uut/Reg2/, width 32 of formal port PCincr_out is not equal to width 1 of actual signal PCincr3.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 255 ns : File "C:/Users/Sanjeev/Desktop/Practice files/Acad Labs/Comp Arch Lab/Pipelined_MIPS_Assignment_3/Assignment_3/R_Type_Datapath (4)/R_Type_Datapath/Pipeline_test.v" Line 58

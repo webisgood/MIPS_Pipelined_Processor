@@ -1,0 +1,438 @@
+Release 14.1 - xst P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Reading design: SCDataPath.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "SCDataPath.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "SCDataPath"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : SCDataPath
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\OneDrive - hyderabad.bits-pilani.ac.in\Assignment\R_Type_Datapath\Sign_Extender.v" into library work
+Parsing module <Sign_Extender>.
+Analyzing Verilog file "D:\OneDrive - hyderabad.bits-pilani.ac.in\Assignment\R_Type_Datapath\Shifter.v" into library work
+Parsing module <Shifter>.
+Analyzing Verilog file "D:\OneDrive - hyderabad.bits-pilani.ac.in\Assignment\R_Type_Datapath\Register_File.v" into library work
+Parsing module <Register_File>.
+Analyzing Verilog file "D:\OneDrive - hyderabad.bits-pilani.ac.in\Assignment\R_Type_Datapath\Program_Counter.v" into library work
+Parsing module <Program_Counter>.
+Analyzing Verilog file "D:\OneDrive - hyderabad.bits-pilani.ac.in\Assignment\R_Type_Datapath\MUX_5.v" into library work
+Parsing module <MUX_5>.
+Analyzing Verilog file "D:\OneDrive - hyderabad.bits-pilani.ac.in\Assignment\R_Type_Datapath\MUX_32.v" into library work
+Parsing module <MUX_32>.
+Analyzing Verilog file "D:\OneDrive - hyderabad.bits-pilani.ac.in\Assignment\R_Type_Datapath\Main_Control.v" into library work
+Parsing module <Main_Control>.
+Analyzing Verilog file "D:\OneDrive - hyderabad.bits-pilani.ac.in\Assignment\R_Type_Datapath\Instruction_Memory.v" into library work
+Parsing module <Instruction_Memory>.
+Analyzing Verilog file "D:\OneDrive - hyderabad.bits-pilani.ac.in\Assignment\R_Type_Datapath\Data_Memory.v" into library work
+Parsing module <Data_Memory>.
+Analyzing Verilog file "D:\OneDrive - hyderabad.bits-pilani.ac.in\Assignment\R_Type_Datapath\ALU_Main.v" into library work
+Parsing module <ALU_Main>.
+Analyzing Verilog file "D:\OneDrive - hyderabad.bits-pilani.ac.in\Assignment\R_Type_Datapath\ALU_Control.v" into library work
+Parsing module <ALU_Control>.
+Analyzing Verilog file "D:\OneDrive - hyderabad.bits-pilani.ac.in\Assignment\R_Type_Datapath\SCDataPath.v" into library work
+Parsing module <SCDataPath>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:1016 - "D:\OneDrive - hyderabad.bits-pilani.ac.in\Assignment\R_Type_Datapath\SCDataPath.v" Line 36: Port Zero is not connected to this instance
+WARNING:HDLCompiler:1016 - "D:\OneDrive - hyderabad.bits-pilani.ac.in\Assignment\R_Type_Datapath\SCDataPath.v" Line 38: Port Zero is not connected to this instance
+
+Elaborating module <SCDataPath>.
+
+Elaborating module <Program_Counter>.
+ERROR:HDLCompiler:1401 - "D:\OneDrive - hyderabad.bits-pilani.ac.in\Assignment\R_Type_Datapath\Program_Counter.v" Line 29: Signal PC[31] in unit Program_Counter is connected to following multiple drivers:
+Driver 0: output signal PC[31] of instance Flip-flop (PC).
+Driver 1: output signal PC[31] of instance Flip-flop (_i000006).
+Driver 0: output signal PC[30] of instance Flip-flop (PC).
+Driver 1: output signal PC[30] of instance Flip-flop (_i000006).
+Driver 0: output signal PC[29] of instance Flip-flop (PC).
+Driver 1: output signal PC[29] of instance Flip-flop (_i000006).
+Driver 0: output signal PC[28] of instance Flip-flop (PC).
+Driver 1: output signal PC[28] of instance Flip-flop (_i000006).
+Driver 0: output signal PC[27] of instance Flip-flop (PC).
+Driver 1: output signal PC[27] of instance Flip-flop (_i000006).
+Driver 0: output signal PC[26] of instance Flip-flop (PC).
+Driver 1: output signal PC[26] of instance Flip-flop (_i000006).
+Driver 0: output signal PC[25] of instance Flip-flop (PC).
+Driver 1: output signal PC[25] of instance Flip-flop (_i000006).
+Driver 0: output signal PC[24] of instance Flip-flop (PC).
+Driver 1: output signal PC[24] of instance Flip-flop (_i000006).
+Driver 0: output signal PC[23] of instance Flip-flop (PC).
+Driver 1: output signal PC[23] of instance Flip-flop (_i000006).
+Driver 0: output signal PC[22] of instance Flip-flop (PC).
+Driver 1: output signal PC[22] of instance Flip-flop (_i000006).
+Driver 0: output signal PC[21] of instance Flip-flop (PC).
+Driver 1: output signal PC[21] of instance Flip-flop (_i000006).
+Driver 0: output signal PC[20] of instance Flip-flop (PC).
+Driver 1: output signal PC[20] of instance Flip-flop (_i000006).
+Driver 0: output signal PC[19] of instance Flip-flop (PC).
+Driver 1: output signal PC[19] of instance Flip-flop (_i000006).
+Driver 0: output signal PC[18] of instance Flip-flop (PC).
+Driver 1: output signal PC[18] of instance Flip-flop (_i000006).
+Driver 0: output signal PC[17] of instance Flip-flop (PC).
+Driver 1: output signal PC[17] of instance Flip-flop (_i000006).
+Driver 0: output signal PC[16] of instance Flip-flop (PC).
+Driver 1: output signal PC[16] of instance Flip-flop (_i000006).
+Driver 0: output signal PC[15] of instance Flip-flop (PC).
+Driver 1: output signal PC[15] of instance Flip-flop (_i000006).
+Driver 0: output signal PC[14] of instance Flip-flop (PC).
+Driver 1: output signal PC[14] of instance Flip-flop (_i000006).
+Driver 0: output signal PC[13] of instance Flip-flop (PC).
+Driver 1: output signal PC[13] of instance Flip-flop (_i000006).
+Driver 0: output signal PC[12] of instance Flip-flop (PC).
+Driver 1: output signal PC[12] of instance Flip-flop (_i000006).
+Driver 0: output signal PC[11] of instance Flip-flop (PC).
+Driver 1: output signal PC[11] of instance Flip-flop (_i000006).
+Driver 0: output signal PC[10] of instance Flip-flop (PC).
+Driver 1: output signal PC[10] of instance Flip-flop (_i000006).
+Driver 0: output signal PC[9] of instance Flip-flop (PC).
+Driver 1: output signal PC[9] of instance Flip-flop (_i000006).
+Driver 0: output signal PC[8] of instance Flip-flop (PC).
+Driver 1: output signal PC[8] of instance Flip-flop (_i000006).
+Driver 0: output signal PC[7] of instance Flip-flop (PC).
+Driver 1: output signal PC[7] of instance Flip-flop (_i000006).
+Driver 0: output signal PC[6] of instance Flip-flop (PC).
+Driver 1: output signal PC[6] of instance Flip-flop (_i000006).
+Driver 0: output signal PC[5] of instance Flip-flop (PC).
+Driver 1: output signal PC[5] of instance Flip-flop (_i000006).
+Driver 0: output signal PC[4] of instance Flip-flop (PC).
+Driver 1: output signal PC[4] of instance Flip-flop (_i000006).
+Driver 0: output signal PC[3] of instance Flip-flop (PC).
+Driver 1: output signal PC[3] of instance Flip-flop (_i000006).
+Driver 0: output signal PC[2] of instance Flip-flop (PC).
+Driver 1: output signal PC[2] of instance Flip-flop (_i000006).
+Driver 0: output signal PC[1] of instance Flip-flop (PC).
+Driver 1: output signal PC[1] of instance Flip-flop (_i000006).
+Driver 0: output signal PC[0] of instance Flip-flop (PC).
+Driver 1: output signal PC[0] of instance Flip-flop (_i000006).
+Module Program_Counter remains a blackbox, due to errors in its contents
+WARNING:HDLCompiler:1499 - "D:\OneDrive - hyderabad.bits-pilani.ac.in\Assignment\R_Type_Datapath\Program_Counter.v" Line 21: Empty module <Program_Counter> remains a black box.
+
+Elaborating module <Instruction_Memory>.
+WARNING:HDLCompiler:91 - "D:\OneDrive - hyderabad.bits-pilani.ac.in\Assignment\R_Type_Datapath\Instruction_Memory.v" Line 51: Signal <Instr_Mem> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:634 - "D:\OneDrive - hyderabad.bits-pilani.ac.in\Assignment\R_Type_Datapath\Instruction_Memory.v" Line 28: Net <Instr_Mem[31][7]> does not have a driver.
+
+Elaborating module <Main_Control>.
+
+Elaborating module <ALU_Main>.
+
+Elaborating module <Shifter>.
+
+Elaborating module <MUX_32>.
+
+Elaborating module <MUX_5>.
+
+Elaborating module <Register_File>.
+ERROR:HDLCompiler:1401 - "D:\OneDrive - hyderabad.bits-pilani.ac.in\Assignment\R_Type_Datapath\Register_File.v" Line 33: Signal RegMemory[17][31] in unit Register_File is connected to following multiple drivers:
+Driver 0: output signal RegMemory[17][31] of instance Flip-flop (RegMemory[0]).
+Driver 1: output signal RegMemory[17][31] of instance Flip-Flop (RegMemory[17][31]).
+Driver 0: output signal RegMemory[17][30] of instance Flip-flop (RegMemory[0]).
+Driver 1: output signal RegMemory[17][30] of instance Flip-Flop (RegMemory[17][30]).
+Driver 0: output signal RegMemory[17][29] of instance Flip-flop (RegMemory[0]).
+Driver 1: output signal RegMemory[17][29] of instance Flip-Flop (RegMemory[17][29]).
+Driver 0: output signal RegMemory[17][28] of instance Flip-flop (RegMemory[0]).
+Driver 1: output signal RegMemory[17][28] of instance Flip-Flop (RegMemory[17][28]).
+Driver 0: output signal RegMemory[17][27] of instance Flip-flop (RegMemory[0]).
+Driver 1: output signal RegMemory[17][27] of instance Flip-Flop (RegMemory[17][27]).
+Driver 0: output signal RegMemory[17][26] of instance Flip-flop (RegMemory[0]).
+Driver 1: output signal RegMemory[17][26] of instance Flip-Flop (RegMemory[17][26]).
+Driver 0: output signal RegMemory[17][25] of instance Flip-flop (RegMemory[0]).
+Driver 1: output signal RegMemory[17][25] of instance Flip-Flop (RegMemory[17][25]).
+Driver 0: output signal RegMemory[17][24] of instance Flip-flop (RegMemory[0]).
+Driver 1: output signal RegMemory[17][24] of instance Flip-Flop (RegMemory[17][24]).
+Driver 0: output signal RegMemory[17][23] of instance Flip-flop (RegMemory[0]).
+Driver 1: output signal RegMemory[17][23] of instance Flip-Flop (RegMemory[17][23]).
+Driver 0: output signal RegMemory[17][22] of instance Flip-flop (RegMemory[0]).
+Driver 1: output signal RegMemory[17][22] of instance Flip-Flop (RegMemory[17][22]).
+Driver 0: output signal RegMemory[17][21] of instance Flip-flop (RegMemory[0]).
+Driver 1: output signal RegMemory[17][21] of instance Flip-Flop (RegMemory[17][21]).
+Driver 0: output signal RegMemory[17][20] of instance Flip-flop (RegMemory[0]).
+Driver 1: output signal RegMemory[17][20] of instance Flip-Flop (RegMemory[17][20]).
+Driver 0: output signal RegMemory[17][19] of instance Flip-flop (RegMemory[0]).
+Driver 1: output signal RegMemory[17][19] of instance Flip-Flop (RegMemory[17][19]).
+Driver 0: output signal RegMemory[17][18] of instance Flip-flop (RegMemory[0]).
+Driver 1: output signal RegMemory[17][18] of instance Flip-Flop (RegMemory[17][18]).
+Driver 0: output signal RegMemory[17][17] of instance Flip-flop (RegMemory[0]).
+Driver 1: output signal RegMemory[17][17] of instance Flip-Flop (RegMemory[17][17]).
+Driver 0: output signal RegMemory[17][16] of instance Flip-flop (RegMemory[0]).
+Driver 1: output signal RegMemory[17][16] of instance Flip-Flop (RegMemory[17][16]).
+Driver 0: output signal RegMemory[17][15] of instance Flip-flop (RegMemory[0]).
+Driver 1: output signal RegMemory[17][15] of instance Flip-Flop (RegMemory[17][15]).
+Driver 0: output signal RegMemory[17][14] of instance Flip-flop (RegMemory[0]).
+Driver 1: output signal RegMemory[17][14] of instance Flip-Flop (RegMemory[17][14]).
+Driver 0: output signal RegMemory[17][13] of instance Flip-flop (RegMemory[0]).
+Driver 1: output signal RegMemory[17][13] of instance Flip-Flop (RegMemory[17][13]).
+Driver 0: output signal RegMemory[17][12] of instance Flip-flop (RegMemory[0]).
+Driver 1: output signal RegMemory[17][12] of instance Flip-Flop (RegMemory[17][12]).
+Driver 0: output signal RegMemory[17][11] of instance Flip-flop (RegMemory[0]).
+Driver 1: output signal RegMemory[17][11] of instance Flip-Flop (RegMemory[17][11]).
+Driver 0: output signal RegMemory[17][10] of instance Flip-flop (RegMemory[0]).
+Driver 1: output signal RegMemory[17][10] of instance Flip-Flop (RegMemory[17][10]).
+Driver 0: output signal RegMemory[17][9] of instance Flip-flop (RegMemory[0]).
+Driver 1: output signal RegMemory[17][9] of instance Flip-Flop (RegMemory[17][9]).
+Driver 0: output signal RegMemory[17][8] of instance Flip-flop (RegMemory[0]).
+Driver 1: output signal RegMemory[17][8] of instance Flip-Flop (RegMemory[17][8]).
+Driver 0: output signal RegMemory[17][7] of instance Flip-flop (RegMemory[0]).
+Driver 1: output signal RegMemory[17][7] of instance Flip-Flop (RegMemory[17][7]).
+Driver 0: output signal RegMemory[17][6] of instance Flip-flop (RegMemory[0]).
+Driver 1: output signal RegMemory[17][6] of instance Flip-Flop (RegMemory[17][6]).
+Driver 0: output signal RegMemory[17][5] of instance Flip-flop (RegMemory[0]).
+Driver 1: output signal RegMemory[17][5] of instance Flip-Flop (RegMemory[17][5]).
+Driver 0: output signal RegMemory[17][4] of instance Flip-flop (RegMemory[0]).
+Driver 1: output signal RegMemory[17][4] of instance Flip-Flop (RegMemory[17][4]).
+Driver 0: output signal RegMemory[17][3] of instance Flip-flop (RegMemory[0]).
+Driver 1: output signal RegMemory[17][3] of instance Flip-Flop (RegMemory[17][3]).
+Driver 0: output signal RegMemory[17][2] of instance Flip-flop (RegMemory[0]).
+Driver 1: output signal RegMemory[17][2] of instance Flip-Flop (RegMemory[17][2]).
+Driver 0: output signal RegMemory[17][1] of instance Flip-flop (RegMemory[0]).
+Driver 1: output signal RegMemory[17][1] of instance Flip-Flop (RegMemory[17][1]).
+Driver 0: output signal RegMemory[17][0] of instance Flip-flop (RegMemory[0]).
+Driver 1: output signal RegMemory[17][0] of instance Flip-Flop (RegMemory[17][0]).
+Module Register_File remains a blackbox, due to errors in its contents
+WARNING:HDLCompiler:1499 - "D:\OneDrive - hyderabad.bits-pilani.ac.in\Assignment\R_Type_Datapath\Register_File.v" Line 21: Empty module <Register_File> remains a black box.
+
+Elaborating module <Sign_Extender>.
+
+Elaborating module <ALU_Control>.
+
+Elaborating module <Data_Memory>.
+WARNING:HDLCompiler:91 - "D:\OneDrive - hyderabad.bits-pilani.ac.in\Assignment\R_Type_Datapath\Data_Memory.v" Line 40: Signal <MemRead> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\OneDrive - hyderabad.bits-pilani.ac.in\Assignment\R_Type_Datapath\Data_Memory.v" Line 41: Signal <Data_Mem> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+ERROR:HDLCompiler:1401 - "D:\OneDrive - hyderabad.bits-pilani.ac.in\Assignment\R_Type_Datapath\Data_Memory.v" Line 31: Signal Data_Mem[9][31] in unit Data_Memory is connected to following multiple drivers:
+Driver 0: output signal Data_Mem[9][31] of instance Latch (Data_Mem[9][31]).
+Driver 1: output signal Data_Mem[9][31] of instance Flip-Flop (_i000041).
+Driver 0: output signal Data_Mem[9][30] of instance Latch (Data_Mem[9][30]).
+Driver 1: output signal Data_Mem[9][30] of instance Flip-Flop (_i000042).
+Driver 0: output signal Data_Mem[9][29] of instance Latch (Data_Mem[9][29]).
+Driver 1: output signal Data_Mem[9][29] of instance Flip-Flop (_i000043).
+Driver 0: output signal Data_Mem[9][28] of instance Latch (Data_Mem[9][28]).
+Driver 1: output signal Data_Mem[9][28] of instance Flip-Flop (_i000044).
+Driver 0: output signal Data_Mem[9][27] of instance Latch (Data_Mem[9][27]).
+Driver 1: output signal Data_Mem[9][27] of instance Flip-Flop (_i000045).
+Driver 0: output signal Data_Mem[9][26] of instance Latch (Data_Mem[9][26]).
+Driver 1: output signal Data_Mem[9][26] of instance Flip-Flop (_i000046).
+Driver 0: output signal Data_Mem[9][25] of instance Latch (Data_Mem[9][25]).
+Driver 1: output signal Data_Mem[9][25] of instance Flip-Flop (_i000047).
+Driver 0: output signal Data_Mem[9][24] of instance Latch (Data_Mem[9][24]).
+Driver 1: output signal Data_Mem[9][24] of instance Flip-Flop (_i000048).
+Driver 0: output signal Data_Mem[9][23] of instance Latch (Data_Mem[9][23]).
+Driver 1: output signal Data_Mem[9][23] of instance Flip-Flop (_i000049).
+Driver 0: output signal Data_Mem[9][22] of instance Latch (Data_Mem[9][22]).
+Driver 1: output signal Data_Mem[9][22] of instance Flip-Flop (_i000050).
+Driver 0: output signal Data_Mem[9][21] of instance Latch (Data_Mem[9][21]).
+Driver 1: output signal Data_Mem[9][21] of instance Flip-Flop (_i000051).
+Driver 0: output signal Data_Mem[9][20] of instance Latch (Data_Mem[9][20]).
+Driver 1: output signal Data_Mem[9][20] of instance Flip-Flop (_i000052).
+Driver 0: output signal Data_Mem[9][19] of instance Latch (Data_Mem[9][19]).
+Driver 1: output signal Data_Mem[9][19] of instance Flip-Flop (_i000053).
+Driver 0: output signal Data_Mem[9][18] of instance Latch (Data_Mem[9][18]).
+Driver 1: output signal Data_Mem[9][18] of instance Flip-Flop (_i000054).
+Driver 0: output signal Data_Mem[9][17] of instance Latch (Data_Mem[9][17]).
+Driver 1: output signal Data_Mem[9][17] of instance Flip-Flop (_i000055).
+Driver 0: output signal Data_Mem[9][16] of instance Latch (Data_Mem[9][16]).
+Driver 1: output signal Data_Mem[9][16] of instance Flip-Flop (_i000056).
+Driver 0: output signal Data_Mem[9][15] of instance Latch (Data_Mem[9][15]).
+Driver 1: output signal Data_Mem[9][15] of instance Flip-Flop (_i000057).
+Driver 0: output signal Data_Mem[9][14] of instance Latch (Data_Mem[9][14]).
+Driver 1: output signal Data_Mem[9][14] of instance Flip-Flop (_i000058).
+Driver 0: output signal Data_Mem[9][13] of instance Latch (Data_Mem[9][13]).
+Driver 1: output signal Data_Mem[9][13] of instance Flip-Flop (_i000059).
+Driver 0: output signal Data_Mem[9][12] of instance Latch (Data_Mem[9][12]).
+Driver 1: output signal Data_Mem[9][12] of instance Flip-Flop (_i000060).
+Driver 0: output signal Data_Mem[9][11] of instance Latch (Data_Mem[9][11]).
+Driver 1: output signal Data_Mem[9][11] of instance Flip-Flop (_i000061).
+Driver 0: output signal Data_Mem[9][10] of instance Latch (Data_Mem[9][10]).
+Driver 1: output signal Data_Mem[9][10] of instance Flip-Flop (_i000062).
+Driver 0: output signal Data_Mem[9][9] of instance Latch (Data_Mem[9][9]).
+Driver 1: output signal Data_Mem[9][9] of instance Flip-Flop (_i000063).
+Driver 0: output signal Data_Mem[9][8] of instance Latch (Data_Mem[9][8]).
+Driver 1: output signal Data_Mem[9][8] of instance Flip-Flop (_i000064).
+Driver 0: output signal Data_Mem[9][7] of instance Latch (Data_Mem[9][7]).
+Driver 1: output signal Data_Mem[9][7] of instance Flip-Flop (_i000065).
+Driver 0: output signal Data_Mem[9][6] of instance Latch (Data_Mem[9][6]).
+Driver 1: output signal Data_Mem[9][6] of instance Flip-Flop (_i000066).
+Driver 0: output signal Data_Mem[9][5] of instance Latch (Data_Mem[9][5]).
+Driver 1: output signal Data_Mem[9][5] of instance Flip-Flop (_i000067).
+Driver 0: output signal Data_Mem[9][4] of instance Latch (Data_Mem[9][4]).
+Driver 1: output signal Data_Mem[9][4] of instance Flip-Flop (_i000068).
+Driver 0: output signal Data_Mem[9][3] of instance Latch (Data_Mem[9][3]).
+Driver 1: output signal Data_Mem[9][3] of instance Flip-Flop (_i000069).
+Driver 0: output signal Data_Mem[9][2] of instance Latch (Data_Mem[9][2]).
+Driver 1: output signal Data_Mem[9][2] of instance Flip-Flop (_i000070).
+Driver 0: output signal Data_Mem[9][1] of instance Latch (Data_Mem[9][1]).
+Driver 1: output signal Data_Mem[9][1] of instance Flip-Flop (_i000071).
+Driver 0: output signal Data_Mem[9][0] of instance Latch (Data_Mem[9][0]).
+Driver 1: output signal Data_Mem[9][0] of instance Flip-Flop (_i000072).
+Driver 0: output signal Data_Mem[8][31] of instance Latch (Data_Mem[8][31]).
+Driver 1: output signal Data_Mem[8][31] of instance Flip-Flop (_i000073).
+Driver 0: output signal Data_Mem[8][30] of instance Latch (Data_Mem[8][30]).
+Driver 1: output signal Data_Mem[8][30] of instance Flip-Flop (_i000074).
+Driver 0: output signal Data_Mem[8][29] of instance Latch (Data_Mem[8][29]).
+Driver 1: output signal Data_Mem[8][29] of instance Flip-Flop (_i000075).
+Driver 0: output signal Data_Mem[8][28] of instance Latch (Data_Mem[8][28]).
+Driver 1: output signal Data_Mem[8][28] of instance Flip-Flop (_i000076).
+Driver 0: output signal Data_Mem[8][27] of instance Latch (Data_Mem[8][27]).
+Driver 1: output signal Data_Mem[8][27] of instance Flip-Flop (_i000077).
+Driver 0: output signal Data_Mem[8][26] of instance Latch (Data_Mem[8][26]).
+Driver 1: output signal Data_Mem[8][26] of instance Flip-Flop (_i000078).
+Driver 0: output signal Data_Mem[8][25] of instance Latch (Data_Mem[8][25]).
+Driver 1: output signal Data_Mem[8][25] of instance Flip-Flop (_i000079).
+Driver 0: output signal Data_Mem[8][24] of instance Latch (Data_Mem[8][24]).
+Driver 1: output signal Data_Mem[8][24] of instance Flip-Flop (_i000080).
+Driver 0: output signal Data_Mem[8][23] of instance Latch (Data_Mem[8][23]).
+Driver 1: output signal Data_Mem[8][23] of instance Flip-Flop (_i000081).
+Driver 0: output signal Data_Mem[8][22] of instance Latch (Data_Mem[8][22]).
+Driver 1: output signal Data_Mem[8][22] of instance Flip-Flop (_i000082).
+Driver 0: output signal Data_Mem[8][21] of instance Latch (Data_Mem[8][21]).
+Driver 1: output signal Data_Mem[8][21] of instance Flip-Flop (_i000083).
+Driver 0: output signal Data_Mem[8][20] of instance Latch (Data_Mem[8][20]).
+Driver 1: output signal Data_Mem[8][20] of instance Flip-Flop (_i000084).
+Driver 0: output signal Data_Mem[8][19] of instance Latch (Data_Mem[8][19]).
+Driver 1: output signal Data_Mem[8][19] of instance Flip-Flop (_i000085).
+Driver 0: output signal Data_Mem[8][18] of instance Latch (Data_Mem[8][18]).
+Driver 1: output signal Data_Mem[8][18] of instance Flip-Flop (_i000086).
+Driver 0: output signal Data_Mem[8][17] of instance Latch (Data_Mem[8][17]).
+Driver 1: output signal Data_Mem[8][17] of instance Flip-Flop (_i000087).
+Driver 0: output signal Data_Mem[8][16] of instance Latch (Data_Mem[8][16]).
+Driver 1: output signal Data_Mem[8][16] of instance Flip-Flop (_i000088).
+Driver 0: output signal Data_Mem[8][15] of instance Latch (Data_Mem[8][15]).
+Driver 1: output signal Data_Mem[8][15] of instance Flip-Flop (_i000089).
+Driver 0: output signal Data_Mem[8][14] of instance Latch (Data_Mem[8][14]).
+Driver 1: output signal Data_Mem[8][14] of instance Flip-Flop (_i000090).
+Driver 0: output signal Data_Mem[8][13] of instance Latch (Data_Mem[8][13]).
+Driver 1: output signal Data_Mem[8][13] of instance Flip-Flop (_i000091).
+Driver 0: output signal Data_Mem[8][12] of instance Latch (Data_Mem[8][12]).
+Driver 1: output signal Data_Mem[8][12] of instance Flip-Flop (_i000092).
+Driver 0: output signal Data_Mem[8][11] of instance Latch (Data_Mem[8][11]).
+Driver 1: output signal Data_Mem[8][11] of instance Flip-Flop (_i000093).
+Driver 0: output signal Data_Mem[8][10] of instance Latch (Data_Mem[8][10]).
+Driver 1: output signal Data_Mem[8][10] of instance Flip-Flop (_i000094).
+Driver 0: output signal Data_Mem[8][9] of instance Latch (Data_Mem[8][9]).
+Driver 1: output signal Data_Mem[8][9] of instance Flip-Flop (_i000095).
+Driver 0: output signal Data_Mem[8][8] of instance Latch (Data_Mem[8][8]).
+Driver 1: output signal Data_Mem[8][8] of instance Flip-Flop (_i000096).
+Driver 0: output signal Data_Mem[8][7] of instance Latch (Data_Mem[8][7]).
+Driver 1: output signal Data_Mem[8][7] of instance Flip-Flop (_i000097).
+Driver 0: output signal Data_Mem[8][6] of instance Latch (Data_Mem[8][6]).
+Driver 1: output signal Data_Mem[8][6] of instance Flip-Flop (_i000098).
+Driver 0: output signal Data_Mem[8][5] of instance Latch (Data_Mem[8][5]).
+Driver 1: output signal Data_Mem[8][5] of instance Flip-Flop (_i000099).
+Driver 0: output signal Data_Mem[8][4] of instance Latch (Data_Mem[8][4]).
+Driver 1: output signal Data_Mem[8][4] of instance Flip-Flop (_i000100).
+Driver 0: output signal Data_Mem[8][3] of instance Latch (Data_Mem[8][3]).
+Driver 1: output signal Data_Mem[8][3] of instance Flip-Flop (_i000101).
+Driver 0: output signal Data_Mem[8][2] of instance Latch (Data_Mem[8][2]).
+Driver 1: output signal Data_Mem[8][2] of instance Flip-Flop (_i000102).
+Driver 0: output signal Data_Mem[8][1] of instance Latch (Data_Mem[8][1]).
+Driver 1: output signal Data_Mem[8][1] of instance Flip-Flop (_i000103).
+Driver 0: output signal Data_Mem[8][0] of instance Latch (Data_Mem[8][0]).
+Driver 1: output signal Data_Mem[8][0] of instance Flip-Flop (_i000104).
+Module Data_Memory remains a blackbox, due to errors in its contents
+WARNING:HDLCompiler:1499 - "D:\OneDrive - hyderabad.bits-pilani.ac.in\Assignment\R_Type_Datapath\Data_Memory.v" Line 21: Empty module <Data_Memory> remains a black box.
+--> 
+
+Total memory usage is 4493444 kilobytes
+
+Number of errors   :    3 (   0 filtered)
+Number of warnings :    9 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

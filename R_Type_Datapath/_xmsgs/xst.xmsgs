@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"D:\OneDrive - hyderabad.bits-pilani.ac.in\Assignment\R_Type_Datapath\SCDataPath.v" Line 36: Port <arg fmt="%s" index="1">Zero</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"D:\OneDrive - hyderabad.bits-pilani.ac.in\Assignment\R_Type_Datapath\SCDataPath.v" Line 38: Port <arg fmt="%s" index="1">Zero</arg> is not connected to this instance
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1401" delta="old" >"D:\OneDrive - hyderabad.bits-pilani.ac.in\Assignment\R_Type_Datapath\Program_Counter.v" Line 29: Signal <arg fmt="%s" index="1">PC[31]</arg> in unit <arg fmt="%s" index="2">Program_Counter</arg> is connected to following multiple drivers:
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"D:\OneDrive - hyderabad.bits-pilani.ac.in\Assignment\R_Type_Datapath\Program_Counter.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">Program_Counter</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="new" >"D:\OneDrive - hyderabad.bits-pilani.ac.in\Assignment\R_Type_Datapath\Instruction_Memory.v" Line 51: Signal &lt;<arg fmt="%s" index="1">Instr_Mem</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="634" delta="new" >"D:\OneDrive - hyderabad.bits-pilani.ac.in\Assignment\R_Type_Datapath\Instruction_Memory.v" Line 28: Net &lt;<arg fmt="%s" index="1">Instr_Mem[31][7]</arg>&gt; does not have a driver.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1401" delta="old" >"D:\OneDrive - hyderabad.bits-pilani.ac.in\Assignment\R_Type_Datapath\Register_File.v" Line 33: Signal <arg fmt="%s" index="1">RegMemory[17][31]</arg> in unit <arg fmt="%s" index="2">Register_File</arg> is connected to following multiple drivers:
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"D:\OneDrive - hyderabad.bits-pilani.ac.in\Assignment\R_Type_Datapath\Register_File.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">Register_File</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\OneDrive - hyderabad.bits-pilani.ac.in\Assignment\R_Type_Datapath\Data_Memory.v" Line 40: Signal &lt;<arg fmt="%s" index="1">MemRead</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"D:\OneDrive - hyderabad.bits-pilani.ac.in\Assignment\R_Type_Datapath\Data_Memory.v" Line 41: Signal &lt;<arg fmt="%s" index="1">Data_Mem</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1401" delta="old" >"D:\OneDrive - hyderabad.bits-pilani.ac.in\Assignment\R_Type_Datapath\Data_Memory.v" Line 31: Signal <arg fmt="%s" index="1">Data_Mem[9][31]</arg> in unit <arg fmt="%s" index="2">Data_Memory</arg> is connected to following multiple drivers:
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"D:\OneDrive - hyderabad.bits-pilani.ac.in\Assignment\R_Type_Datapath\Data_Memory.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">Data_Memory</arg>&gt; remains a black box.
+</msg>
+
+</messages>
+

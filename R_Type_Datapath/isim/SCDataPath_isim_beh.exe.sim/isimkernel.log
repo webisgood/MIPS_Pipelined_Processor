@@ -1,0 +1,29 @@
+Command line:
+   SCDataPath_isim_beh.exe
+     -simmode  gui
+     -simrunnum  1
+     -socket  50388
+
+Sun Apr 23 11:53:17 2023
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 5145.68 Meg
+
+ Total Signals          : 178
+ Total Nets             : 1037
+ Total Signal Drivers   : 66
+ Total Blocks           : 22
+ Total Primitive Blocks : 21
+ Total Processes        : 91
+ Total Traceable Variables  : 68
+ Total Scalar Nets and Variables : 4521
+Total Line Count : 252
+
+ Total Simulation Time: 0.109375 sec
+
+ Current Memory Usage: 5145.68 Meg
+
+Sun Apr 23 11:53:26 2023
+
